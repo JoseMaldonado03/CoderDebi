@@ -43,8 +43,6 @@ header {
     font-size: 20px;
 }
 
-
-
 img.logo {
     width: 135px;
     height: 125px;
@@ -93,12 +91,6 @@ article{
     margin-bottom: 10px;
 }
 
-.padreflex{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    
-}
 .card-body * {
     text-align: center;
    }
@@ -108,23 +100,6 @@ article{
     flex-direction: column;
    }
 
-@media (max-width: 770px){
-    
-    #headerIndex ul{
-        flex-direction: column;
-    }
-    .padreflex{
-        flex-direction: column;
-    
-    }
-    
-}
-
-@media (max-width:770px){
-    .blog1{
-        flex-direction: column;
-    }
-}
 .gato{
     margin: 0 auto;
     border: #502556 solid 20px;
@@ -142,12 +117,7 @@ article{
     
 }
 .my-background-bonito{
-    background-image: url(../assets/Logo_devi.png);
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(149, 70, 152));
 }
 .insta{
     background-color: #ffffff;
@@ -161,11 +131,19 @@ article{
 .calendario{
     color: darkmagenta;
     background-color: #ffffff;
-    margin-top: 100px;
     max-width: 265px;
-    margin: 100px auto
+    margin: 100px auto;  
 }
-
+tbody, td, tfoot, th, thead, tr {
+    text-align: center;
+    border: solid;
+}
+.padreflex{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    
+}
 .pao{
     background-position: center;
     border: #502556 solid 30px;
@@ -198,6 +176,15 @@ img.daniela{
     height: 400px;
     padding: 8px;
 }
+@media (max-width: 770px){
+
+    .padreflex{
+        flex-direction: column;
+    
+    }
+    
+}
+
 
 .nuestros_servicios{
     border: #502556 solid 10px;
@@ -230,7 +217,7 @@ img.daniela{
 .blog1{
     background-color: #ffffff;
     border: #502556 solid 10px;
-    margin: 100px auto;
+    margin: 100px 100px;
     width: 900px;
     color: #502556;
     
@@ -238,7 +225,8 @@ img.daniela{
 
 .mat_ne{
     background-color: #f3a7ff;
+    text-align: left;
     width: 600px;
-    margin: 30px auto;
+    margin: 30px 30px;
     padding: 30px;
 }
