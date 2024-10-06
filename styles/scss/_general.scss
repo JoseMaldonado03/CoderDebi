@@ -1,0 +1,288 @@
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-content: $align;
+}
+
+.defaultMarginTop {
+  margin-top: 50px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3a7ff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+  background-color: $secondaryColor;
+  @extend .defaultMarginTop;
+}
+
+.menu {
+  max-width: 900px;
+  margin: 0 auto;
+  @include flex(row, flex-start, flex-start);
+}
+
+#headerIndex nav {
+  width: 100%;
+  @include flex(row, flex-start, flex-start);
+}
+
+#headerIndex ul {
+  @include flex(row, space-between, center);
+  width: 100%;
+}
+
+#headerIndex ul li {
+  list-style: none;
+}
+
+#headerIndex ul li a {
+  text-decoration: none;
+  color: rgb(184, 88, 203);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+img.logo {
+  width: 135px;
+  height: 125px;
+  padding: 8px;
+  @include flex(row, flex-start, flex-start);
+}
+
+p {
+  color: rgb(86, 5, 86);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  margin: 20px;
+}
+
+h1 {
+  color: rgb(61, 15, 58);
+
+}
+
+.dede {
+  @extend .defaultMarginTop;
+}
+
+.volto {
+  max-width: 900px;
+
+}
+
+.letrass {
+  font-size: 30px;
+  width: 100%;
+}
+
+.letrita {
+  color: #ac3dbb;
+  margin-right: 40px;
+}
+
+.carousel_2 {
+  margin-top: 40px;
+  max-width: 600px;
+  border: $primaryColor solid 20px;
+}
+
+.boton_1 {
+  background-color: #efbff7;
+}
+
+article {
+  border: $primaryColor solid 10px !important;
+  margin-bottom: 10px;
+}
+
+.card-body * {
+  text-align: center;
+}
+
+.card-body {
+  @include flex(column, center, flex-start)
+}
+
+.gato {
+  margin: 0 auto;
+  border: $primaryColor solid 20px;
+  margin-top: 125px;
+  max-width: 900px;
+  @include flex(row, flex-start, flex-start);
+}
+
+.devi {
+  @extend .defaultMarginTop;
+}
+
+.my-text {
+  background-color: $secondaryColor;
+  @include flex(column, flex-start, flex-start);
+}
+
+.my-background-bonito {
+  background-image: linear-gradient(to right, $secondaryColor, rgb(149, 70, 152));
+}
+
+.insta {
+  background-color: $secondaryColor;
+  border: $primaryColor solid 10px;
+  max-width: 500px;
+  margin: 100px auto;
+}
+
+.fecha {
+  margin-top: 90px;
+}
+
+.calendario {
+  color: darkmagenta;
+  background-color: $secondaryColor;
+  max-width: 265px;
+  margin: 100px auto;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  text-align: center;
+  border: solid;
+}
+
+.padreflex {
+  @include flex(row, space-around, flex-start);
+}
+
+.pao {
+  background-position: center;
+  border: $primaryColor solid 30px;
+  text-align: center;
+  margin: 90px auto;
+  background-color: $secondaryColor;
+  max-width: 500px;
+  font-size: 20px;
+
+}
+
+img.paola {
+  background-position: center;
+  width: 400px;
+  height: 400px;
+  padding: 8px;
+}
+
+.dani {
+  background-position: center;
+  border: $primaryColor solid 30px;
+  text-align: center;
+  margin: 90px auto;
+  background-color: $secondaryColor;
+  max-width: 500px;
+  font-size: 20px;
+}
+
+img.daniela {
+  background-position: center;
+  width: 400px;
+  height: 400px;
+  padding: 8px;
+}
+.numero1{
+    animation-name: animacionnumero1;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 3s;
+  
+  }
+  @keyframes animacionnumero1{
+    0%{
+      background-color: #ffffff;
+      width: 250px;
+    }
+    25%{
+      border: #ac3dbb solid 5px;
+      width: 300px;
+    }
+    50%{
+      background-color: #f3a7ff;
+      width: 325px;
+    }
+    75%{
+      border: #502556 solid 8px;
+    }
+    100%{
+      background-color: #ac3dbb;
+      width: 350px;
+    }
+  }
+
+@media (max-width: 770px) {
+
+  .padreflex {
+    @include flex(column, space-around, flex-start);
+
+  }
+
+}
+
+
+.nuestros_servicios {
+  border: $primaryColor solid 10px;
+  @include flex(row, space-around, flex-start);
+  margin: 90px auto;
+  background-color: $secondaryColor;
+  max-width: 500px;
+  font-size: 20px;
+}
+
+
+.bellemapi {
+  @extend .defaultMarginTop;
+  margin-bottom: 30px;
+  border: $primaryColor solid 10px;
+  text-align: center;
+  margin-top: 90px;
+  background-color: $secondaryColor;
+}
+
+.manypie {
+  @extend .defaultMarginTop;
+  @include flex(column, flex-start, flex-start)
+}
+
+.button {
+  background-color: $secondaryColor;
+  text-align: center;
+  @include flex(row, flex-start, flex-start);
+}
+
+.blog1 {
+  background-color: $secondaryColor;
+  border: $primaryColor solid 10px;
+  margin: 100px 100px;
+  width: 900px;
+  color: $primaryColor;
+
+}
+
+.mat_ne {
+  background-color: #f3a7ff;
+  text-align: left;
+  width: 600px;
+  margin: 30px 30px;
+  padding: 30px;
+}
