@@ -1,17 +1,298 @@
-/* Error: Undefined variable.
- *    ,
- * 24 |   background-color: $secondaryColor;
- *    |                     ^^^^^^^^^^^^^^^
- *    '
- *   styles\scss\_general.scss 24:21  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 24 \2502    background-color: $secondaryColor;\d\a    \2502                      ^^^^^^^^^^^^^^^\a    \2575 \a   styles\\scss\\_general.scss 24:21  root stylesheet";
+.defaultMarginTop, .manypie, .bellemapi, .devi, .dede, header {
+  margin-top: 50px;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3a7ff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  background-color: #bab8b8;
+}
+
+.menu {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+#headerIndex nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+#headerIndex ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+}
+
+#headerIndex ul li {
+  list-style: none;
+}
+
+#headerIndex ul li a {
+  text-decoration: none;
+  color: rgb(184, 88, 203);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+img.logo {
+  width: 135px;
+  height: 125px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+p {
+  color: rgb(86, 5, 86);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  margin: 20px;
+}
+
+h1 {
+  color: rgb(61, 15, 58);
+}
+
+.volto {
+  max-width: 900px;
+}
+
+.letrass {
+  font-size: 30px;
+  width: 100%;
+}
+
+.letrita {
+  color: #ac3dbb;
+  margin-right: 40px;
+}
+
+.carousel_2 {
+  margin-top: 40px;
+  max-width: 600px;
+  border: #502556 solid 20px;
+}
+
+.boton_1 {
+  background-color: #efbff7;
+}
+
+article {
+  border: #502556 solid 10px !important;
+  margin-bottom: 10px;
+}
+
+.card-body * {
+  text-align: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.gato {
+  margin: 0 auto;
+  border: #502556 solid 20px;
+  margin-top: 125px;
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.my-text {
+  background-color: #bab8b8;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.my-background-bonito {
+  background-image: linear-gradient(to right, #bab8b8, rgb(149, 70, 152));
+}
+
+.insta {
+  background-color: #bab8b8;
+  border: #502556 solid 10px;
+  max-width: 500px;
+  margin: 100px auto;
+}
+
+.fecha {
+  margin-top: 90px;
+}
+
+.calendario {
+  color: darkmagenta;
+  background-color: #bab8b8;
+  max-width: 265px;
+  margin: 100px auto;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  text-align: center;
+  border: solid;
+}
+
+.padreflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: flex-start;
+}
+
+.pao {
+  background-position: center;
+  border: #502556 solid 30px;
+  text-align: center;
+  margin: 90px auto;
+  background-color: #bab8b8;
+  max-width: 500px;
+  font-size: 20px;
+}
+
+img.paola {
+  background-position: center;
+  width: 400px;
+  height: 400px;
+  padding: 8px;
+}
+
+.dani {
+  background-position: center;
+  border: #502556 solid 30px;
+  text-align: center;
+  margin: 90px auto;
+  background-color: #bab8b8;
+  max-width: 500px;
+  font-size: 20px;
+}
+
+img.daniela {
+  background-position: center;
+  width: 400px;
+  height: 400px;
+  padding: 8px;
+}
+
+.numero1 {
+  animation-name: animacionnumero1;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 5s;
+  animation-delay: 3s;
+}
+
+@keyframes animacionnumero1 {
+  0% {
+    background-color: #ffffff;
+    width: 250px;
+  }
+  25% {
+    border: #ac3dbb solid 5px;
+    width: 300px;
+  }
+  50% {
+    background-color: #f3a7ff;
+    width: 325px;
+  }
+  75% {
+    border: #502556 solid 8px;
+  }
+  100% {
+    background-color: #ac3dbb;
+    width: 350px;
+  }
+}
+@media (max-width: 770px) {
+  .padreflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+}
+.nuestros_servicios {
+  border: #502556 solid 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: flex-start;
+  margin: 90px auto;
+  background-color: #bab8b8;
+  max-width: 500px;
+  font-size: 20px;
+}
+
+.bellemapi {
+  margin-bottom: 30px;
+  border: #502556 solid 10px;
+  text-align: center;
+  margin-top: 90px;
+  background-color: #bab8b8;
+}
+
+.manypie {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.button {
+  background-color: #bab8b8;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.blog1 {
+  background-color: #bab8b8;
+  border: #502556 solid 10px;
+  margin: 100px 100px;
+  width: 900px;
+  color: #502556;
+}
+
+.mat_ne {
+  background-color: #f3a7ff;
+  text-align: left;
+  width: 600px;
+  margin: 30px 30px;
+  padding: 30px;
+}
+
+/*# sourceMappingURL=styles.css.map */
