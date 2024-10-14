@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  background-color: #bab8b8;
+  background-color: #ffffff;
 }
 
 .menu {
@@ -126,7 +126,7 @@ article {
 }
 
 .my-text {
-  background-color: #bab8b8;
+  background-color: hsl(0, 0%, 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -134,11 +134,11 @@ article {
 }
 
 .my-background-bonito {
-  background-image: linear-gradient(to right, #bab8b8, rgb(149, 70, 152));
+  background-image: linear-gradient(to right, #ffffff, rgb(149, 70, 152));
 }
 
 .insta {
-  background-color: #bab8b8;
+  background-color: hsl(0, 0%, 100%);
   border: #502556 solid 10px;
   max-width: 500px;
   margin: 100px auto;
@@ -150,7 +150,7 @@ article {
 
 .calendario {
   color: darkmagenta;
-  background-color: #bab8b8;
+  background-color: #ffffff;
   max-width: 265px;
   margin: 100px auto;
 }
@@ -177,7 +177,7 @@ tr {
   border: #502556 solid 30px;
   text-align: center;
   margin: 90px auto;
-  background-color: #bab8b8;
+  background-color: #ffffff;
   max-width: 500px;
   font-size: 20px;
 }
@@ -194,7 +194,7 @@ img.paola {
   border: #502556 solid 30px;
   text-align: center;
   margin: 90px auto;
-  background-color: #bab8b8;
+  background-color: #ffffff;
   max-width: 500px;
   font-size: 20px;
 }
@@ -250,7 +250,7 @@ img.daniela {
   justify-content: space-around;
   align-content: flex-start;
   margin: 90px auto;
-  background-color: #bab8b8;
+  background-color: #ffffff;
   max-width: 500px;
   font-size: 20px;
 }
@@ -260,7 +260,7 @@ img.daniela {
   border: #502556 solid 10px;
   text-align: center;
   margin-top: 90px;
-  background-color: #bab8b8;
+  background-color: #ffffff;
 }
 
 .manypie {
@@ -271,7 +271,7 @@ img.daniela {
 }
 
 .button {
-  background-color: #bab8b8;
+  background-color: #ffffff;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -280,7 +280,7 @@ img.daniela {
 }
 
 .blog1 {
-  background-color: #bab8b8;
+  background-color: #ffffff;
   border: #502556 solid 10px;
   margin: 100px 100px;
   width: 900px;
