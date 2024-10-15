@@ -169,14 +169,14 @@ tr {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-content: flex-start;
+  align-content: center;
 }
 
 .pao {
   background-position: center;
   border: #502556 solid 30px;
   text-align: center;
-  margin: 90px auto;
+  margin: 90px 20px;
   background-color: #ffffff;
   max-width: 500px;
   font-size: 20px;
@@ -184,8 +184,7 @@ tr {
 
 img.paola {
   background-position: center;
-  width: 400px;
-  height: 400px;
+  width: 100%;
   padding: 8px;
 }
 
@@ -193,7 +192,7 @@ img.paola {
   background-position: center;
   border: #502556 solid 30px;
   text-align: center;
-  margin: 90px auto;
+  margin: 90px 20px;
   background-color: #ffffff;
   max-width: 500px;
   font-size: 20px;
@@ -201,8 +200,7 @@ img.paola {
 
 img.daniela {
   background-position: center;
-  width: 400px;
-  height: 400px;
+  width: 100%;
   padding: 8px;
 }
 
@@ -216,23 +214,23 @@ img.daniela {
 
 @keyframes animacionnumero1 {
   0% {
-    background-color: #ffffff;
-    width: 250px;
+    background-color: #c0fab2;
+    max-width: 250px;
   }
   25% {
-    border: #ac3dbb solid 5px;
-    width: 300px;
+    border: hsl(130, 62.7118644068%, 29.5%) solid 5px;
+    max-width: 300px;
   }
   50% {
-    background-color: #f3a7ff;
-    width: 325px;
+    background-color: #70e36c;
+    max-width: 325px;
   }
   75% {
-    border: #502556 solid 8px;
+    border: #1f5620 solid 8px;
   }
   100% {
-    background-color: #ac3dbb;
-    width: 350px;
+    background-color: #39b92d;
+    max-width: 350px;
   }
 }
 @media (max-width: 770px) {
@@ -282,7 +280,7 @@ img.daniela {
 .blog1 {
   background-color: #ffffff;
   border: #502556 solid 10px;
-  margin: 100px 100px;
+  margin: 100px 20px;
   max-width: 900px;
   color: #502556;
 }

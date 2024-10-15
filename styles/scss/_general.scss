@@ -163,24 +163,22 @@ tr {
 }
 
 .padreflex {
-  @include flex(row, space-around, flex-start);
+  @include flex(row, space-around, center);
 }
 
 .pao {
   background-position: center;
   border: $primaryColor solid 30px;
   text-align: center;
-  margin: 90px auto;
+  margin: 90px 20px;
   background-color: $secondaryColor;
   max-width: 500px;
   font-size: 20px;
-
 }
 
 img.paola {
   background-position: center;
-  width: 400px;
-  height: 400px;
+  width: 100%;
   padding: 8px;
 }
 
@@ -188,7 +186,7 @@ img.paola {
   background-position: center;
   border: $primaryColor solid 30px;
   text-align: center;
-  margin: 90px auto;
+  margin: 90px 20px;
   background-color: $secondaryColor;
   max-width: 500px;
   font-size: 20px;
@@ -196,39 +194,44 @@ img.paola {
 
 img.daniela {
   background-position: center;
-  width: 400px;
-  height: 400px;
+  width: 100%;
   padding: 8px;
 }
-.numero1{
-    animation-name: animacionnumero1;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 5s;
-    animation-delay: 3s;
-  
+
+.numero1 {
+  animation-name: animacionnumero1;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 5s;
+  animation-delay: 3s;
+
+}
+
+@keyframes animacionnumero1 {
+  0% {
+    background-color: #c0fab2;
+    max-width: 250px;
   }
-  @keyframes animacionnumero1{
-    0%{
-      background-color: #ffffff;
-      width: 250px;
-    }
-    25%{
-      border: #ac3dbb solid 5px;
-      width: 300px;
-    }
-    50%{
-      background-color: #f3a7ff;
-      width: 325px;
-    }
-    75%{
-      border: #502556 solid 8px;
-    }
-    100%{
-      background-color: #ac3dbb;
-      width: 350px;
-    }
+
+  25% {
+    border: hwb(130 11% 52%) solid 5px;
+    max-width: 300px;
   }
+
+  50% {
+    background-color: #70e36c;
+    max-width: 325px;
+  }
+
+  75% {
+    border: #1f5620 solid 8px;
+  }
+
+  100% {
+    background-color: #39b92d;
+    max-width: 350px;
+  }
+}
 
 @media (max-width: 770px) {
 
@@ -273,7 +276,7 @@ img.daniela {
 .blog1 {
   background-color: $secondaryColor;
   border: $primaryColor solid 10px;
-  margin: 100px 100px;
+  margin: 100px 20px;
   max-width: 900px;
   color: $primaryColor;
 
