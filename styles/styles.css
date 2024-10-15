@@ -172,6 +172,12 @@ tr {
   align-content: center;
 }
 
+a {
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+  text-decoration: underline;
+  font-size: 23px;
+}
+
 .pao {
   background-position: center;
   border: #502556 solid 30px;
